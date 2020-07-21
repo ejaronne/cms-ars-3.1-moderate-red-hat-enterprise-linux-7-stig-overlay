@@ -8,8 +8,9 @@ summary: "CMS ARS 3.1 Moderate Overlay InSpec Validation Profile for RHEL7 STIG"
 version: 0.1.0
 
 depends:
-- name: inspec-profile-disa_stig-el7
-  path: ../inspec-profile-disa_stig-el7
+- name: redhat-enterprise-linux-7-stig-baseline
+  git: git@github.com:mitre/redhat-enterprise-linux-7-stig-baseline.git
+  branch: 'v2.6'
 
 attributes:
 - name: disable_slow_controls
